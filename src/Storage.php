@@ -33,4 +33,19 @@ class Storage {
         return self::$instances[$name];
     }
 
+    /**
+     * Creates a new instance of PDO or returns an existing one.
+     *
+     * @param string $name
+     * @return \PDO
+     * @throws \OutOfBoundsException
+     */
+    public static function get($name) {
+        if(!isset(self::$instances[$name])) {
+            throw new \OutOfBoundsException(sprintf('Storage "%s" not set', $name));
+        }
+
+        return self::$instances[$name];
+    }
+
 }
