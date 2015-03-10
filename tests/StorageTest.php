@@ -44,4 +44,25 @@ class StorageTest extends \PHPUnit_Framework_TestCase {
         Storage::get('notset');
     }
 
+    /**
+     * Test connection closing.
+     *
+     * @depends testSetSQLiteConnection
+     */
+    public function testDeleteConnection() {
+        $result = Storage::delete('default');
+
+        $this->assertTrue($result);
+    }
+
+    /**
+     * Test exception when closing a connection which is not set.
+     *
+     * @depends testSetSQLiteConnection
+     * @expectedException \OutOfBoundsException
+     */
+    public function testOutOfBoundExceptionOnClosingNonSetConnection() {
+        Storage::delete('notset');
+    }
+
 }
