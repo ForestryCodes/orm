@@ -48,4 +48,21 @@ class Storage {
         return self::$instances[$name];
     }
 
+    /**
+     * Closes the connection.
+     *
+     * @param string $name
+     * @return bool
+     * @throws \OutOfBoundsException
+     */
+    public static function delete($name) {
+        if(!isset(self::$instances[$name])) {
+            throw new \OutOfBoundsException(sprintf('Storage "%s" not set', $name));
+        }
+
+        self::$instances[$name] = null;
+
+        return true;
+    }
+
 }
