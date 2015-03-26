@@ -1,17 +1,19 @@
 {
-    "name": "forestry/:package_name",
-    "description": ":package_description",
+    "name": "forestry/orm",
+    "description": "Tiny ORM for simple CRUD operations.",
     "keywords": [
         "forestry",
-        ":package_name"
+        "orm",
+        "database",
+        "pdo"
     ],
-    "homepage": "https://github.com/ForestryCodes/:package_name",
+    "homepage": "https://github.com/ForestryCodes/orm",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": ":author_website",
+            "name": "Daniel Melzer",
+            "email": "daniel@melzer.ws",
+            "homepage": "http://daniel.melzer.ws",
             "role": "Developer"
         }
     ],
@@ -23,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Forestry\\Skeleton\\": "src"
+            "Forestry\\Orm\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Forestry\\Skeleton\\Test\\": "tests"
+            "Forestry\\Orm\\Test\\": "tests"
         }
     },
     "extra": {
