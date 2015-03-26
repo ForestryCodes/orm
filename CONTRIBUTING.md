@@ -2,29 +2,19 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/ForestryCodes/:package_name).
+We accept contributions via Pull Requests on [Github](https://github.com/ForestryCodes/log).
 
 
 ## Pull Requests
 
-- **Add tests!** - Your patch won't be accepted if it doesn't have tests.
+- **Write unit tests!** - Patches without test won't be accepted.
 
-- **Document any change in behaviour** - Make sure the `README.md` and any other relevant documentation are kept up-to-date.
+- **Document any change in behaviour.** Keep the readme and changelog up-to-date.
 
-- **Consider our release cycle** - We try to follow [SemVer v2.0.0](http://semver.org/). Randomly breaking public APIs is not an option.
+- **Try to follow [Semantic Versioning](http://semver.org/).**
 
-- **Create feature branches** - Don't ask us to pull from your master branch.
+- **Do not randomly break public APIs.**
 
-- **One pull request per feature** - If you want to do more than one thing, send multiple pull requests.
+- **Create a feature branches. Your master branch won't be pulled.**
 
-- **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please squash them before submitting.
-
-
-## Running Tests
-
-``` bash
-$ phpunit
-```
-
-
-**Happy coding**!
+- **Request one pull per feature.**
