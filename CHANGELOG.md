@@ -1,20 +1,9 @@
 # Changelog
 
-All Notable changes to `:package_name` will be documented in this file.
+All Notable changes to `orm` will be documented in this file.
 
-## NEXT - YYYY-MM-DD
+## 0.1.0 - 2015-03-26
 
 ### Added
-- Nothing
-
-### Deprecated
-- Nothing
-
-### Fixed
-- Nothing
-
-### Removed
-- Nothing
-
-### Security
-- Nothing
+- Connection manager `Storage`
+- Abstract `BaseModel`
